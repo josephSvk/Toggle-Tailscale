@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Toggle Tailscale
+Comment=Toggle Tailscale VPN On/Off
+Icon=/home/joseph/Documents/My Script/tailscale/transparent_icon.png
+Exec=bash "/home/joseph/Documents/My Script/tailscale/toggle_tailscale.sh"
+Terminal=false
+Categories=Utility;
+ 
