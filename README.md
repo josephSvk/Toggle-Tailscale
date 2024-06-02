@@ -26,43 +26,29 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 2. Ensure the scripts have executable permissions:
     ```bash
     chmod +x toggle_tailscale.sh set_dns_private.sh set_dns_default.sh
-    ```
 
-## Usage
+3. Drag and drop the tailscale-dns-switcher.desktop file to your desktop.
 
-### Manual Execution
+4. Open the .desktop file with a text editor and modify the paths to match your setup:
 
-You can manually run the `toggle_tailscale.sh` script:
-```bash
-sudo ./toggle_tailscale.sh
-
-Creating a Desktop Icon
-To create a desktop icon for your script, follow these steps:
-
-Download the repository and extract it to a desired location.
-
-Drag and drop the tailscale-dns-switcher.desktop file to your desktop.
-
-Open the .desktop file with a text editor and modify the paths to match your setup:
-
-plaintext
-Copy code
+#!/usr/bin/env xdg-open
 [Desktop Entry]
-Version=1.0
-Name=Tailscale DNS Switcher
-Comment=Conveniently start or stop Tailscale and switch DNS settings
-Exec=sudo /path/to/your/project/toggle_tailscale.sh
-Icon=/path/to/your/project/transparent_icon.png
-Terminal=true
 Type=Application
-Categories=Utility;Application;
-Make the .desktop file executable:
+Encoding=UTF-8
+Name=Toggle Tailscale
+Comment=Toggle Tailscale VPN On/Off
+Icon=/path/to/your/project/transparent_icon.png
+Exec=bash "/path/to/your/project/toggle_tailscale.sh"
+Terminal=false
+Categories=Utility;
 
-bash
-Copy code
-chmod +x ~/Desktop/tailscale-dns-switcher.desktop
-(Optional) If you want the icon to be available in the applications menu, move the .desktop file to the appropriate directory:
+5. Make the .desktop file executable:
 
-bash
-Copy code
-mv ~/Desktop/tailscale-dns-switcher.desktop ~/.local/share/applications/
+chmod +x ~/Desktop/ToggleTailscale.desktop
+
+6. (Optional) If you want the icon to be available in the applications menu, move the .desktop file to the appropriate directory:
+
+mv ~/Desktop/ToggleTailscale.desktop ~/.local/share/applications/
+
+## Contributing
+**If you have ideas for improvements or have found a bug, feel free to open an issue or create a pull request.**
