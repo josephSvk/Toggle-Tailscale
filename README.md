@@ -47,13 +47,13 @@ Categories=Utility;
 5. Make the .desktop file executable:
 
 ```bash
-`chmod +x ~/Desktop/ToggleTailscale.desktop`
+chmod +x ~/Desktop/ToggleTailscale.desktop
 
 ```
 6. (Optional) If you want the icon to be available in the applications menu, move the .desktop file to the appropriate directory:
 
 ```bash
-`mv ~/Desktop/ToggleTailscale.desktop ~/.local/share/applications/`
+mv ~/Desktop/ToggleTailscale.desktop ~/.local/share/applications/
 
 ```
 ## Contributing
