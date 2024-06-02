@@ -4,7 +4,7 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 
 ## Contents
 
-- `set_dns.sh`: The main script that checks the status of Tailscale and switches DNS settings.
+- `toggle_tailscale.sh`: The main script that checks the status of Tailscale and switches DNS settings.
 - `set_dns_private.sh`: Script to set the private DNS server.
 - `set_dns_default.sh`: Script to set the default DNS servers.
 - `script-icon.png`: Project icon.
@@ -19,19 +19,19 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-username/tailscale-dns-switcher.git
-    cd tailscale-dns-switcher
+    git clone https://github.com/josephSvk/Toggle-Tailscale.git
+    cd Toggle-Tailscale
     ```
 
 2. Ensure the scripts have executable permissions:
     ```bash
-    chmod +x set_dns.sh set_dns_private.sh set_dns_default.sh
+    chmod +x toggle_tailscale.sh set_dns_private.sh set_dns_default.sh
     ```
 
 ## Usage
 
 ### Manual Execution
 
-You can manually run the `set_dns.sh` script:
+You can manually run the `toggle_tailscale.sh` script:
 ```bash
-sudo ./set_dns.sh
+sudo ./toggle_tailscale.sh
