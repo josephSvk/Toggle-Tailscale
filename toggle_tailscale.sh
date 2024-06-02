@@ -9,11 +9,11 @@ if [[ "$status" == *"Tailscale is stopped."* ]] || [[ "$status" == *"does not ap
     sudo tailscale up
     chmod +x set_dns_private.sh
     sudo ./set_dns_private.sh
-    notify-send "Stav Tailscale" "Tailscale je zapnutý a DNS je nastavené na HA"
+    notify-send "Tailscale Up" "Tailscale je zapnutý a DNS je nastavené na HA"
 else
     # Ak Tailscale beží, vypne ho
     sudo tailscale down
     chmod +x set_dns_default.sh
     sudo ./set_dns_default.sh
-    notify-send "Stav Tailscale" "Tailscale je vypnutý a DNS je nastavené na predvolené hodnoty"
+    notify-send "Tailscale Down" "Tailscale je vypnutý a DNS je nastavené na predvolené hodnoty"
 fi
