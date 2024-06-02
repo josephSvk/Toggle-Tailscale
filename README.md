@@ -31,6 +31,7 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 
 4. Open the .desktop file with a text editor and modify the paths to match your setup:
 
+```bash
 `#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
@@ -42,13 +43,18 @@ Exec=bash "/path/to/your/project/toggle_tailscale.sh"
 Terminal=false
 Categories=Utility;
 `
+```
 5. Make the .desktop file executable:
 
+```bash
 `chmod +x ~/Desktop/ToggleTailscale.desktop`
 
+```
 6. (Optional) If you want the icon to be available in the applications menu, move the .desktop file to the appropriate directory:
 
+```bash
 `mv ~/Desktop/ToggleTailscale.desktop ~/.local/share/applications/`
 
+```
 ## Contributing
 **If you have ideas for improvements or have found a bug, feel free to open an issue or create a pull request.**
