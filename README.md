@@ -7,7 +7,7 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 - `toggle_tailscale.sh`: The main script that checks the status of Tailscale and switches DNS settings.
 - `set_dns_private.sh`: Script to set the private DNS server.
 - `set_dns_default.sh`: Script to set the default DNS servers.
-- `script-icon.png`: Project icon.
+- `transparent_icon.png`: Project icon.
 
 ## Requirements
 
@@ -35,3 +35,34 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 You can manually run the `toggle_tailscale.sh` script:
 ```bash
 sudo ./toggle_tailscale.sh
+
+Creating a Desktop Icon
+To create a desktop icon for your script, follow these steps:
+
+Download the repository and extract it to a desired location.
+
+Drag and drop the tailscale-dns-switcher.desktop file to your desktop.
+
+Open the .desktop file with a text editor and modify the paths to match your setup:
+
+plaintext
+Copy code
+[Desktop Entry]
+Version=1.0
+Name=Tailscale DNS Switcher
+Comment=Conveniently start or stop Tailscale and switch DNS settings
+Exec=sudo /path/to/your/project/toggle_tailscale.sh
+Icon=/path/to/your/project/transparent_icon.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;
+Make the .desktop file executable:
+
+bash
+Copy code
+chmod +x ~/Desktop/tailscale-dns-switcher.desktop
+(Optional) If you want the icon to be available in the applications menu, move the .desktop file to the appropriate directory:
+
+bash
+Copy code
+mv ~/Desktop/tailscale-dns-switcher.desktop ~/.local/share/applications/
