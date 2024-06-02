@@ -32,7 +32,7 @@ This project provides a convenient way to start or stop Tailscale VPN and automa
 4. Open the .desktop file with a text editor and modify the paths to match your setup:
 
 ```bash
-`#!/usr/bin/env xdg-open
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
@@ -42,7 +42,7 @@ Icon=/path/to/your/project/transparent_icon.png
 Exec=bash "/path/to/your/project/toggle_tailscale.sh"
 Terminal=false
 Categories=Utility;
-`
+
 ```
 5. Make the .desktop file executable:
 
